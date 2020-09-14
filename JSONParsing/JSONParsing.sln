@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONParsing.iOS", "JSONPars
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONParsing", "JSONParsing\JSONParsing.csproj", "{B0069385-7627-45EB-9853-BDB13FF3C90F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONParsingTest", "JSONParsingTest\JSONParsingTest.csproj", "{41E3BF45-BB9B-4797-A561-13C6586BCE23}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,5 +55,17 @@ Global
 		{B0069385-7627-45EB-9853-BDB13FF3C90F}.Debug|iPhone.Build.0 = Debug|Any CPU
 		{B0069385-7627-45EB-9853-BDB13FF3C90F}.Release|iPhone.ActiveCfg = Release|Any CPU
 		{B0069385-7627-45EB-9853-BDB13FF3C90F}.Release|iPhone.Build.0 = Release|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{41E3BF45-BB9B-4797-A561-13C6586BCE23}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
