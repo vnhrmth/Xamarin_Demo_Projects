@@ -1,1 +1,1 @@
-# Xamarin
+# Xamarin Self Learning projects.
