@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using DemoApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -20,6 +20,7 @@ namespace DemoApp
 
         protected override void OnSleep()
         {
+
         }
 
         protected override void OnResume()
