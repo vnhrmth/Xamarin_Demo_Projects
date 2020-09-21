@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="DemoApp.Views.MainPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:converters="clr-namespace:DemoApp.Converters"
+    Title="Do Too!">
+    <ContentPage.Resources>
+        <converters:StatusColorConverter x:Key="statusColorConverter" />
+    </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Command="{Binding AddItem}" Text="Add" />
+    </ContentPage.ToolbarItems>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Button Command="{Binding ToggleFilter}" Text="{Binding FilterText, StringFormat='Filter: {0}'}" />
+        <ListView
+            x:Name="ItemsListView"
+            Grid.Row="1"
+            ItemsSource="{Binding Items}"
+            RowHeight="70"
+            SelectedItem="{Binding SelectedItem}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
+                            <MenuItem Command="{Binding ToggleCompleted}" Text="{Binding StatusText}" />
+                        </ViewCell.ContextActions>
+
+                        <Grid Padding="15,10">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="10" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+
+                            <BoxView Grid.RowSpan="2" BackgroundColor="{Binding Item.Completed, Converter={StaticResource statusColorConverter}}" />
+                            <Label
+                                Grid.Column="1"
+                                FontSize="Large"
+                                Text="{Binding Item.Title}" />
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                FontSize="Micro"
+                                Text="{Binding Item.Due}" />
+                            <Label
+                                Grid.Row="1"
+                                Grid.Column="1"
+                                FontSize="Micro"
+                                HorizontalTextAlignment="End"
+                                IsVisible="{Binding Item.Completed}"
+                                Text="Completed" />
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+
+</ContentPage>
